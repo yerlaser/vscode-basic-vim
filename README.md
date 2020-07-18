@@ -1,6 +1,17 @@
-# SimpleVim
+# BasicVim
 
-An opinionated Vim-like extension for VSCode that prioritizes simplicity (of use and implementation) and integration with native VSCode features.
+Forked from (https://github.com/jpotterm/vscode-simple-vim). All credits to JPotterm and his wonderful Simple VIM plugin.
+
+My fork is made because while I fully respect the choices of the original plugin author, a couple of things just don't work for me and cause frustration.
+
+1) Command dd doesn't yank deleted text. This is contrary to what Vim does and contrary to my muscle memory.
+2) Lack of commands with numbers. I would like to explore if it's possible to add this functionality.
+3) Hard or impossible to add/modify bindings. I want the restrictions to be lighter.
+
+
+## Below text is currently a full copy of Simple VIM plugin description.
+## I will update it later.
+
 
 Once you enter Insert mode it will be a completely vanilla VSCode experience: the only event SimpleVim will listen for is the `Escape` key to go back to Normal mode.
 
