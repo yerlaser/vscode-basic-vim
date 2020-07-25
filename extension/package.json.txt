@@ -1,0 +1,25 @@
+            // {
+            //     "key": "ctrl+r",
+            //     "command": "redo",
+            //     "when": "editorTextFocus && !extension.basicVim.insertMode"
+            // },
+            // {
+            //     "key": "ctrl+d",
+            //     "command": "extension.basicVim.scrollDownHalfPage",
+            //     "when": "editorTextFocus && !extension.basicVim.insertMode"
+            // },
+            // {
+            //     "key": "ctrl+u",
+            //     "command": "extension.basicVim.scrollUpHalfPage",
+            //     "when": "editorTextFocus && !extension.basicVim.insertMode"
+            // },
+            // {
+            //     "key": "ctrl+f",
+            //     "command": "extension.basicVim.scrollDownPage",
+            //     "when": "editorTextFocus && !extension.basicVim.insertMode"
+            // },
+            // {
+            //     "key": "ctrl+b",
+            //     "command": "extension.basicVim.scrollUpPage",
+            //     "when": "editorTextFocus && !extension.basicVim.insertMode"
+            // }

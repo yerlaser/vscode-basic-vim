@@ -1,0 +1,55 @@
+{
+    "name": "basic-vim",
+    "displayName": "Basic Vim",
+    "description": "Vim extension for VSCode",
+    "version": "0.0.1",
+    "license": "MIT",
+    "publisher": "yerlaser",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yerlaser/vscode-basic-vim.git"
+    },
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "Escape",
+                "command": "extension.basicVim.escapeKey",
+                "when": "editorTextFocus"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "BasicVim Configuration",
+            "properties": {
+                "basicVim.yankHighlightBackgroundColor": {
+                    "type": "string",
+                    "default": "#F8F3AB",
+                    "description": "Background color that flashes to show the range when yanking."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "lint": "tslint -c tslint.json 'src/**/*.ts' --exclude 'src/test/*.ts'"
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.1",
+        "tslint": "^5.10.0",
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.18"
+    }
+}
